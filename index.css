@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav ul li{
+
+    display: inline-block;
+    margin: 2rem;
+
+}
+li{
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+ul{
+    margin-top: 1rem;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 2rem;
+}
+.navimg{
+    width: 130px;
+    height: 50px;
+}
+.topdiv{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 4rem 3rem; */
+}
+.imgtop{
+    width: 400px;
+    margin: 4rem 3rem ;
+}
+.topdetail{
+    width: 500px;
+    align-self: center;
+    margin: 4rem 3rem ;
+}
+.topdetail > h1{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    font-size: 1.8rem;
+}
+.topdetail > p{
+    margin-top: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.topdetail > input{
+    padding: 0.3rem;
+    width: 200px;
+    opacity: 0.3;
+}
+.topdetail > button{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-color:hsl(224, 93%, 58%);
+    height: 28px;
+    width: 130px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+    margin-left: 1rem;
+}
+.third{
+    display: flex;
+    background-color: hsl(238, 22%, 44%,0.5);
+    justify-content: space-between;
+    
+}
+
+.thirdtext{
+    width: 400px;
+    margin: 3rem;
+    color: white;
+}
+.thirdtext > h1{
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 10px;
+}
+.thirdtext > p{
+    font-family:'Open Sans', sans-serif; 
+}
+.thirdentry{
+
+    margin: 4rem;
+    width: 400px;
+}
+ footer{
+    color: white;
+    background-color: hsl(243, 87%, 12%);
+    padding-bottom: 3rem;
+}
+
+.foottext{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 2rem;
+}
+.icons > *+* , .fb{
+    margin-left: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.fb:hover,.twi:hover,.insta:hover{
+    background-color: lightcoral;
+}
+.phone{
+    margin-top: 10px;
+}
+.email{
+    margin-top: 20px;   
+}
+.detail > span{
+    display: block;
+}
+.list ul li{
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+.list ul li:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+.secondlist ul li{
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+.secondlist ul li:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+.detail ul li{
+    margin-bottom: 35px;
+    opacity: 0.7;
+}
+.detail ul li:first-child{
+    margin-top: 10px;
+}
+.footimage{
+    margin: 2rem;
+}
+.icons{
+    opacity: 0.7;
+}
+.thirdentry > button{
+    background-color: hsl(224, 93%, 58%);
+    color: white;
+    border-color:hsl(224, 93%, 58%);
+    height: 40px;
+    width: 150px;
+    font-size: 0.7rem;
+    border-radius: 4px;
+
+}
+.thirdentry > input{
+    width: 400px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.td2{
+ 
+    background-color:#F8F8FE ;
+
+
+}
+.imgdiv{
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100px;
+    width: 100%;
+}
+a{
+    color: hsl(170, 45%, 43%);
+
+}
+.box{
+    width: 300px;
+    margin-top: 1rem;
+    border-radius: 6px;
+    text-align: center;
+    height: 200px;
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+}
+.avatar{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.quote{
+    position: absolute;
+    left: 0%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+.cardpera{
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    /* text-align: center; */
+}
+.nameh{
+font-size: 0.8rem;
+margin-right: 7rem;
+margin-top: 1rem;
+
+}
+.names{
+font-size: 0.6rem;
+margin-right:5.6rem;
+opacity: 0.7;
+}
+button:hover{
+ cursor: pointer;
+}
+
+@media(max-width:720px){
+ .topdiv{
+    flex-direction: column-reverse;
+
+ }
+ .topdetail > h1{
+    font: 1rem;
+ }
+
+ .navimg{
+    height: 30px;
+    width: 100px;
+ }
+ .nav ul li{
+    margin: 0.1rem;
+ }
+ .third{
+    flex-direction: column;
+
+ }
+ .thirdentry > input{
+    width: 250px;
+ }
+ .foottext{
+    flex-direction: column;
+ }
+ .fb{
+    margin-left: 0rem ;
+ }
+ .thirdtext{
+    width: 300px;
+    margin-bottom: 0px;
+ }
+ .thirdentry{
+    margin-top: 1rem;
+    margin-left: 3rem;
+ }
+ .thirdentry > button{
+    margin-left: 3rem;
+ }
+ .imgtop{
+    margin: 0px;
+ }
+ .topdetail{
+    margin: 0px;
+    text-align: center;
+    width: auto;
+ }
+ .box{
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+ }
+ .topdetail > input{
+    display: block;
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+ }
+ .topdetail> button{
+     margin-left: -1rem;
+     margin-bottom: 1rem;
+ }
+}
+
+@media (min-width:768px)  and (max-width:1080px) {
+    .topdiv{
+        flex-direction: column-reverse;
+    
+     }
+     .topdetail > h1{
+        font: 1rem;
+     }
+    
+     .navimg{
+        height: 30px;
+        width: 100px;
+     }
+     .nav ul li{
+        margin: 0.1rem;
+     }
+     .third{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+     }
+     .thirdentry > input{
+        width: 250px;
+     }
+     .foottext{
+        flex-direction: column;
+     }
+     .fb{
+        margin-left: 0rem ;
+     }
+     .thirdtext{
+        width: 300px;
+        margin-bottom: 0px;
+     }
+     .thirdentry{
+        margin-top: 2rem;
+        margin-left: 12rem;
+     }
+     .thirdentry > button{
+        margin-left: 3rem;
+     }
+     .imgtop{
+        margin: 0px;
+        justify-content: center;
+     }
+     .topdetail{
+        margin: 0px;
+        text-align: center;
+        width: auto;
+     }
+     .box{
+        margin-left: 13rem;
+        margin-bottom: 1rem;
+     }
+     .topdetail > input{
+        display: block;
+        margin-left: 17rem;
+        margin-bottom: 1rem;
+     }
+     .topdetail> button{
+         margin-left: -1rem;
+         margin-bottom: 1rem;
+     }
+     .topimg{
+        display: flex;
+        justify-content: center;
+     }
+   
+}
